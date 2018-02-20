@@ -1,0 +1,7 @@
+include ':app'
+
+include ':shared-common'
+project(":shared-common").projectDir = new File("../Shared/common")
+
+include ':shared-android'
+project(":shared-android").projectDir = new File("../Shared/android")

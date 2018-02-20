@@ -1,0 +1,24 @@
+apply plugin: 'konan'
+
+konanArtifacts {
+    framework('shared-ios', targets: ['iphone', 'iphone_sim']) {
+        srcDir '../common/main'
+        srcDir 'main'
+
+
+        enableDebug true
+        enableMultiplatform true        
+    }
+
+    program('shared-ios-test') {
+        srcDir 'test'
+        commonSourceSet 'test'
+        extraOpts '-tr'
+    }
+}
+
+dependencies {
+    expectedBy project(':shared-common')
+}
+
+task test(dependsOn: run)
