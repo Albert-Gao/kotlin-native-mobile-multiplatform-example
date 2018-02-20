@@ -1,6 +1,8 @@
 ## Overview
 This is an example of using Kotlin native to share the code between iOS and Android. It contains the tests for all the platform code. Setup via the support from multiplatform kotlin.
 
+This setup is aiming to solve the problem, where we want to write the platform specific code in a `multiplatform` manner.
+
 ## Folders
 - Android: Android project built by Android Studio
 - iOS: iOS Project built by XCode
