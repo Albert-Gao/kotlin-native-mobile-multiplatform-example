@@ -24,7 +24,6 @@ The android project can get the `string` from `Sample.checkPlatform()`, compile 
 
 ### Android Studio
 1. The Android Studio won't recognize the syntax of `expect` and `actual`. 
-2. The Android Studio doesn't recognize any code in the `shared-common` module. Even though it will build and run without problem. See the `AuthActivity.kt` in Android Studio, it will display the `Sample` class as red while it should be there.
 
 ### shared-ios
 The gradle test won't run, seems the sourceSets is not right, but I already defined it in the `framework()`section.
