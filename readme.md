@@ -17,13 +17,14 @@ The shared code is in the `Shared` folder.
 ## Workflow:
 - Android: Open `Android` folder in Android Studio
 - iOS: Open `iOS` folder in XCode
-- KN: Open the root folder in `IDEA` or any other IDE.
+- Kotlin Native: Open the root folder in `IDEA` or any other IDE.
 
 ## Current issues
 The android project can get the `string` from `Sample.checkPlatform()`, compile and run without problem. 
 
-### Android Studio
+### Android Studio (Not an issue really)
 1. The Android Studio won't recognize the syntax of `expect` and `actual`. 
+> Just open the code in `IDEA` and you will be all fine.
 
 ### shared-ios
 The gradle test won't run, seems the sourceSets is not right, but I already defined it in the `framework()`section.
