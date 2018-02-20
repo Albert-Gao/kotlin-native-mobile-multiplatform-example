@@ -15,16 +15,15 @@ The shared code is in the `Shared` folder.
 - ios: Some platform specific code for iOS, it will be compiled as an iOS framework
 
 ## Workflow:
-- Android: Open `Android` folder in Android Studio
-- iOS: Open `iOS` folder in XCode
-- Kotlin Native: Open the root folder in `IDEA` or any other IDE.
+- Work on Android App: Open `Android` folder in Android Studio
+- Work on iOS App: Open `iOS` folder in XCode
+- Work on sharing code: Open the root folder in `IDEA` or any other IDE.
 
 ## Current issues
-The android project can get the `string` from `Sample.checkPlatform()`, compile and run without problem. 
 
 ### Android Studio (Not an issue really)
 1. The Android Studio won't recognize the syntax of `expect` and `actual`. 
-> Just open the code in `IDEA` and you will be all fine.
+> Just open the `Shared` code in `IDEA` and you will be all fine.
 
 ### shared-ios
 The gradle test won't run, seems the sourceSets is not right, but I already defined it in the `framework()`section.
