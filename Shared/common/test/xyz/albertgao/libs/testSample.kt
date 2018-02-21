@@ -5,8 +5,8 @@ import kotlin.test.*
 class AuthTest {
     @Test
     fun testCheckPlatform() {
-        val auth = Sample()
-        val platform = auth.checkPlatform()
+        val sample = Sample()
+        val platform = sample.checkPlatform()
         assertEquals(true, platform.endsWith("google.com"))
     }
 }
