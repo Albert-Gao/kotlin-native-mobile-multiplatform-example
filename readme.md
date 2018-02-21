@@ -19,3 +19,6 @@ The shared code is in the `Shared` folder.
 - Work on iOS App: Open `iOS` folder in XCode
 - Work on sharing code: Open the root folder in `IDEA` or any other IDE.
 
+## Tips
+
+If you think the XCode building phase is slow. That is because it will build the KN generated iOS framework every time. You can modify it by just copying the framework files without building it. Because you can always edit Kotlin native code somewhere else.
