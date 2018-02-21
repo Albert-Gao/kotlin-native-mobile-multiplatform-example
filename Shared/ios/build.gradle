@@ -5,7 +5,11 @@ konanArtifacts {
         enableDebug true
         enableMultiplatform true
 
-        srcDir '../common/main'
+        srcDir 'main'
+    }
+
+    library('test-library') {
+        enableMultiplatform true
         srcDir 'main'
     }
 
@@ -13,6 +17,9 @@ konanArtifacts {
         srcDir 'test'
         commonSourceSet 'test'
         extraOpts '-tr'
+        libraries {
+            artifact 'test-library'
+        }
     }
 }
 
