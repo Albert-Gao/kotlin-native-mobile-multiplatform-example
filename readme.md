@@ -1,3 +1,7 @@
+kotlin-native-mobile-multiplatform-example
+
+Read my [blog](http://www.albertgao.xyz/2018/02/22/use-kotlin-to-share-native-code-between-ios-and-android/) if you want more details:
+
 ## Overview
 This is an example of using Kotlin native to share the code between iOS and Android. It contains the tests for all the platform code. Setup via the support from multiplatform kotlin.
 
