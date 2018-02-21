@@ -1,31 +1,27 @@
 //
-//  FirstViewController.swift
-//  nativeHandset
+//  ViewController.swift
+//  Sample
 //
-//  Created by Albert Gao on 9/01/18.
-//  Copyright © 2018 salect. All rights reserved.
+//  Created by Albert Gao on 22/02/18.
+//  Copyright © 2018 albertgao. All rights reserved.
 //
 
 import UIKit
-import nativeLibs
+import SharediOS
 
-class FirstViewController: UIViewController {
-    //MARK: Properties
-    @IBOutlet weak var myLabel:UILabel?
-    
-    //MARK: Actions
-    
+class ViewController: UIViewController {
+
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        myLabel?.text = "haha"
         // Do any additional setup after loading the view, typically from a nib.
+        label.text = SharediOS.SOSSample().checkPlatform()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

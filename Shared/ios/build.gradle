@@ -1,7 +1,7 @@
 apply plugin: 'konan'
 
 konanArtifacts {
-    framework('shared-ios', targets: ['iphone', 'iphone_sim']) {
+    framework('SharediOS', targets: ['iphone', 'iphone_sim']) {
         enableDebug true
         enableMultiplatform true
 

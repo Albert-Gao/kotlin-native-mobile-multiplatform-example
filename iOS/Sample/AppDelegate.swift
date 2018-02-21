@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  nativeHandset
+//  Sample
 //
-//  Created by Albert Gao on 9/01/18.
-//  Copyright © 2018 salect. All rights reserved.
+//  Created by Albert Gao on 22/02/18.
+//  Copyright © 2018 albertgao. All rights reserved.
 //
 
 import UIKit
