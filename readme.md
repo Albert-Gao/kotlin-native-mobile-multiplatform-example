@@ -19,11 +19,3 @@ The shared code is in the `Shared` folder.
 - Work on iOS App: Open `iOS` folder in XCode
 - Work on sharing code: Open the root folder in `IDEA` or any other IDE.
 
-## Current issues
-
-### Android Studio (Not an issue really)
-1. The Android Studio won't recognize the syntax of `expect` and `actual`. 
-> Just open the `Shared` code in `IDEA` and you will be all fine.
-
-### shared-ios
-The gradle test won't run, seems the sourceSets is not right, but I already defined it in the `framework()`section.
