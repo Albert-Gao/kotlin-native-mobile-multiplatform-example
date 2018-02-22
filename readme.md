@@ -28,6 +28,8 @@ The shared code is in the `Shared` folder.
 - Work on iOS App: Open `iOS` folder in XCode
 - Work on sharing code: Open the root folder in `IDEA` or any other IDE.
 
+> In fact, you can edit the sharing code in android studio as well, as we embed them as module, and they all use the same language.
+
 ## About the example
 
 - `Sample` class is for code that is sharing across platforms (Which means you only use API from `kotlin-stdlib-common` or some other cross platform lib).
