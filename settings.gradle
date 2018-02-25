@@ -2,10 +2,13 @@ rootProject.name = 'KotlinMP'
 
 include ":common"
 
-include ":jvm"
+include ":jvmApp"
 
 include ":platforms-jvm"
 project(":platforms-jvm").projectDir = new File("./platforms/jvm")
+
+include ":platforms-android"
+project(":platforms-android").projectDir = new File("./platforms/android")
 
 include ":platforms-ios"
 project(":platforms-ios").projectDir = new File("./platforms/ios")
