@@ -1,10 +1,11 @@
-rootProject.name = 'KNMobileExample'
+rootProject.name = 'KotlinMP'
 
-include ":shared-common"
-project(":shared-common").projectDir = new File("./Shared/common")
+include ":common"
 
-include ":shared-android"
-project(":shared-android").projectDir = new File("./Shared/android")
+include ":jvm"
 
-include ":shared-ios"
-project(":shared-ios").projectDir = new File("./Shared/ios")
+include ":platforms-jvm"
+project(":platforms-jvm").projectDir = new File("./platforms/jvm")
+
+include ":platforms-ios"
+project(":platforms-ios").projectDir = new File("./platforms/ios")

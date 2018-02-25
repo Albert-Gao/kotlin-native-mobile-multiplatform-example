@@ -1,0 +1,7 @@
+include ':app'
+
+include ':common'
+project(":common").projectDir = new File("../common")
+
+include ':platforms-jvm'
+project(":platforms-jvm").projectDir = new File("../platforms/jvm")

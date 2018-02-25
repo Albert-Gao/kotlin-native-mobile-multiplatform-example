@@ -1,4 +1,8 @@
-subprojects {
+subprojects{
+//    if (it.name.startsWith('jvm')) {
+//        return
+//    }
+
     buildscript {
         ext.kotlin_version = '1.2.21'
         ext.kotlin_native_version = '0.6'

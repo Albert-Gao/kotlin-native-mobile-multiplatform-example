@@ -1,0 +1,20 @@
+apply plugin: 'kotlin'
+
+sourceSets {
+    main.kotlin.srcDirs += './'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":platforms-jvm")
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+
+task run(dependsOn: classes, type: JavaExec) {
+    main = 'JvmAppKt'
+    classpath = sourceSets.main.runtimeClasspath
+    ignoreExitValue(true)
+}
