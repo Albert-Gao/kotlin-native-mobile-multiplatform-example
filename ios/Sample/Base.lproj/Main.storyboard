@@ -30,7 +30,6 @@
                             <constraint firstItem="k21-u9-S0D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CX4-cx-KrT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k21-u9-S0D" secondAttribute="trailing" constant="2" id="GLz-Jd-vgR"/>
                             <constraint firstItem="k21-u9-S0D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b7t-ub-35A"/>
-                            <constraint firstItem="k21-u9-S0D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="2" id="pOb-ia-Ur2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
