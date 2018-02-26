@@ -1,7 +1,7 @@
 include ':app'
 
-include ':common'
-project(":common").projectDir = new File("../common")
+include ':shared-common'
+project(":shared-common").projectDir = new File("../Shared/common")
 
-include ':platforms-jvm'
-project(":platforms-jvm").projectDir = new File("../platforms/jvm")
+include ':shared-android'
+project(":shared-android").projectDir = new File("../Shared/android")

@@ -24,7 +24,7 @@ konanArtifacts {
 }
 
 dependencies {
-    expectedBy project(':common')
+    expectedBy project(':shared-common')
 }
 
 task test(dependsOn: run)
