@@ -1,5 +1,7 @@
 # Kotlin Native mobile multiplatform example
 
+There is a cross more platforms version (added JVM and JS) in this [repo](https://github.com/Albert-Gao/kotlin-multuplatform-including-mobile)
+
 Read my [blog](http://www.albertgao.xyz/2018/02/22/use-kotlin-to-share-native-code-between-ios-and-android/) if you want more details:
 
 ## Overview
@@ -12,16 +14,11 @@ This setup is aiming to solve the problem, where we want to write the platform s
 
 - Android: Android project built by Android Studio
 - iOS: iOS Project built by XCode
-- Shared: Kotlin Native code which will be shared across iOS and Android
-
-## About the shared folder
-
-The shared code is in the `Shared` folder.
-
-- common: The common code
-- android: Some platform specific code for android, which will be included in the android folder
-- ios: Some platform specific code for iOS, it will be compiled as an iOS framework
-
+- common: Kotlin code that is meant to be across platform across all platforms without any change.
+- platforms: platform specific API which will then be compiled with `common`
+    - android: Some platform specific code for android, which will be included in the android folder
+    - ios: Some platform specific code for iOS, it will be compiled as an iOS framework
+    
 ## Workflow:
 
 - Work on Android App: Open `Android` folder in Android Studio
@@ -35,8 +32,8 @@ The shared code is in the `Shared` folder.
 - `Sample` class is for code that is sharing across platforms (Which means you only use API from `kotlin-stdlib-common` or some other cross platform lib).
 - `Platform` class is a class which has been implemented twice for different platforms for showing the platform API case.
 
-- Open `Android` folder in Android Studio, run the app, it will show a string from the `:shared-android`
-- Open `iOS` folder in XCode, run the app, it will show a string from the `:shared-ios`
+- Open `Android` folder in Android Studio, run the app, it will show a string from the `:platforms-android`
+- Open `iOS` folder in XCode, run the app, it will show a string from the `:platforms-ios`
 - And the string is from both platforms are retrieved from the `Sample` class.
 
 ## Tips

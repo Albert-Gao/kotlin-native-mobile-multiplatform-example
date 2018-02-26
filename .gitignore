@@ -5,3 +5,4 @@ out/
 .gradle/
 gradle/
 *.iml
+*.swp
