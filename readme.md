@@ -12,8 +12,8 @@ This setup is aiming to solve the problem, where we want to write the platform s
 
 ## Folders
 
-- Android: Android project built by Android Studio
-- iOS: iOS Project built by XCode
+- android: Android project built by Android Studio
+- ios: iOS Project built by XCode
 - common: Kotlin code that is meant to be across platform across all platforms without any change.
 - platforms: platform specific API which will then be compiled with `common`
     - android: Some platform specific code for android, which will be included in the android folder
@@ -21,8 +21,8 @@ This setup is aiming to solve the problem, where we want to write the platform s
     
 ## Workflow:
 
-- Work on Android App: Open `Android` folder in Android Studio
-- Work on iOS App: Open `iOS` folder in XCode
+- Work on Android App: Open `android` folder in Android Studio
+- Work on iOS App: Open `ios` folder in XCode
 - Work on sharing code: Open the root folder in `IDEA` or any other IDE.
 
 > In fact, you can edit the sharing code in android studio as well, as we embed them as module, and they all use the same language.
@@ -32,8 +32,8 @@ This setup is aiming to solve the problem, where we want to write the platform s
 - `Sample` class is for code that is sharing across platforms (Which means you only use API from `kotlin-stdlib-common` or some other cross platform lib).
 - `Platform` class is a class which has been implemented twice for different platforms for showing the platform API case.
 
-- Open `Android` folder in Android Studio, run the app, it will show a string from the `:platforms-android`
-- Open `iOS` folder in XCode, run the app, it will show a string from the `:platforms-ios`
+- Open `android` folder from the root in Android Studio, run the app, it will show a string from the `:platforms-android`
+- Open `ios` folder from the root in XCode, run the app, it will show a string from the `:platforms-ios`
 - And the string is from both platforms are retrieved from the `Sample` class.
 
 ## Tips
