@@ -2,8 +2,6 @@ rootProject.name = 'KNMobileExample'
 
 include ":common"
 
-include ":platforms-android"
-project(":platforms-android").projectDir = new File("./platforms/android")
-
-include ":platforms-ios"
-project(":platforms-ios").projectDir = new File("./platforms/ios")
+include "platforms"
+include ":platforms:android"
+include ":platforms:ios"
