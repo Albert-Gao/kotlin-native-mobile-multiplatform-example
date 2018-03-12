@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = SharediOS.SOSSample().checkPlatform()
+        let text = SharediOS.SOSSample().checkPlatform()
+        label.text = text
     }
 
     override func didReceiveMemoryWarning() {
