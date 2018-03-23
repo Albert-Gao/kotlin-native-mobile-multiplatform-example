@@ -3,6 +3,5 @@
 build/
 out/
 .gradle/
-gradle/
 *.iml
 *.swp
